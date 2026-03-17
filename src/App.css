@@ -4,7 +4,38 @@
   will-change: filter;
   transition: filter 300ms;
 }
+.header-nav{
+  padding:10px 20px;
+}
 
+.logo-div{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size: 24px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.nav-links a{
+  margin-left:20px;
+  text-decoration:none;
+  color:black;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+  .nav-links a{
+    display:block;
+    margin:10px 0;
+  }
+}
+
+
+.active{
+  color:#0d6efd;
+  font-weight:bold;
+}
 div {
   font-family: "Gloria Hallelujah", cursive;
   font-weight: 800;
@@ -298,4 +329,24 @@ ul.user-listing li{
     padding: 10px;
     width: 400px;
     border-radius: 4px;
+}
+
+/* Mobile */
+@media (max-width: 767px){
+  .logo-div{
+    font-size:16px;
+  }
+
+  .nav-links a{
+    font-size:14px;
+  }
+  .header-nav {
+    padding: 20px 0px !important;
+  }
+  .ms-auto.nav-links.navbar-nav a {
+    padding: 12px 0px;
+    border-bottom: 1px solid #aacddb;
+    margin-left: 0px;
+}
+
 }
