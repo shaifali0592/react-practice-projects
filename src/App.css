@@ -348,5 +348,36 @@ ul.user-listing li{
     border-bottom: 1px solid #aacddb;
     margin-left: 0px;
 }
-
+.product-card {
+    width: 48%;
+}
+.producs-container {
+    margin: 30px 5% 20px;
+}
+.product-card img {
+    height: 120px;
+    margin: 0 auto;
+}
+.product-card h1 {
+    font-size: 13px;
+}
+.product-card p{
+  font-size: 10px;
+    line-height: 12px;
+}
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+   .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.producs-container {
+    margin: 40px 3% 20px;
+}
 }
